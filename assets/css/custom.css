@@ -1,0 +1,205 @@
+/* ======= Personalizzazione colore: Marrone al posto del Verde ======= */
+
+/* Cambia lo sfondo di tutti gli elementi che hanno la classe .bg-success */
+.bg-success {
+    background-color: #7b5e4c !important;  /* Marrone di base */
+}
+
+/* Cambia il colore del testo degli elementi con classe .text-success */
+.text-success {
+    color: #7b5e4c !important;  /* Testo marrone */
+}
+
+/* Modifica lo sfondo e il bordo dei bottoni con classe .btn-success */
+.btn-success {
+    background-color: #7b5e4c !important;   /* Bottone marrone */
+    border-color: #7b5e4c !important;       /* Bordo bottone marrone */
+}
+
+/* Cambia il colore al passaggio del mouse sopra i bottoni (hover/focus) */
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #6a4e3e !important;   /* Marrone più scuro al passaggio */
+    border-color: #6a4e3e !important;       /* Bordo marrone scuro */
+}
+
+/* Cambia il colore dei link e delle voci di menu quando ci passi sopra */
+a:hover,
+.nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #7b5e4c !important;  /* Colore marrone in hover */
+}
+
+/* Cambia il colore della voce attiva nella navbar */
+.navbar-light .navbar-nav .nav-link.active {
+    color: #7b5e4c !important;  /* Colore marrone per la voce attiva */
+}
+
+
+
+#febax-hero-carousel {
+    width: 100vw; /* 100% larghezza dello schermo */
+    height: 100vh; /* 100% altezza dello schermo */
+    overflow: hidden;
+}
+
+#febax-hero-carousel .carousel-item {
+    height: 100vh; /* ogni slide prende tutta l’altezza */
+}
+
+#febax-hero-carousel .carousel-item img {
+    object-fit: cover; /* taglia l'immagine per riempire */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Testo sopra la prima slide - versione pulita */
+.carousel-caption.custom-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fffffff3;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    padding: 0 15px;
+    width: 100%;
+}
+
+.carousel-caption.custom-caption h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.carousel-caption.custom-caption p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Responsive su mobile */
+@media (max-width: 768px) {
+    .carousel-caption.custom-caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption.custom-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* Stile per il pulsante flottante di WhatsApp */
+.whatsapp-float {
+  position: fixed;            /* Posiziona il pulsante fisso sullo schermo (non scorre) */
+  bottom: 20px;               /* Distanza dal basso dello schermo */
+  right: 20px;                /* Distanza dal lato destro dello schermo */
+  z-index: 100;               /* Garantisce che stia sopra altri elementi */
+  background-color: #25D366;  /* Colore tipico di WhatsApp */
+  border-radius: 50%;         /* Rende il bottone rotondo */
+  padding: 10px;              /* Spazio interno attorno all’icona */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);  /* Aggiunge un'ombra per risalto */
+  transition: transform 0.3s ease;        /* Effetto animato quando ci passi sopra */
+}
+
+/* Effetto hover (quando l'utente ci passa sopra col mouse) */
+.whatsapp-float:hover {
+  transform: scale(1.1);      /* Aumenta leggermente la dimensione come effetto visivo */
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .position-relative:hover .logo-overlay {
+    opacity: 1;
+  }
+}
+
+.tappabile.logo-attiva .logo-overlay {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+.card-body a.h4 {
+  color: black;
+}
+
+/* === MENU MOBILE SLIDE-IN === */
+
+.mobile-menu {
+    position: fixed;            /* Rende il menu fisso sullo schermo */
+    top: 0;
+    left: -250px;               /* Sposta il menu fuori dalla schermata a sinistra */
+    width: 250px;               /* Larghezza del menu */
+    height: 100vh;              /* Altezza 100% della finestra */
+    background-color: #fff;     /* Colore sfondo menu */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);  /* Ombra a destra */
+    transition: left 0.3s ease; /* Animazione fluida */
+    z-index: 9999;              /* Si mette sopra tutto il resto */
+}
+
+/* Quando il menu è attivo (visibile) */
+.mobile-menu.active {
+    left: 0; /* Scivola dentro dalla sinistra */
+}
+
+/* Colore testo link menu mobile */
+.mobile-menu .nav-link {
+    color: #333333;  /* Cambia con il colore che preferisci */
+    transition: color 0.3s ease;
+}
+
+/* Colore link al passaggio del mouse */
+.mobile-menu .nav-link:hover {
+    color: #007bff;  /* Cambia con il colore hover che preferisci */
+}
+
+/* === FINE MENU MOBILE SLIDE-IN === */
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '›';
+    font-size: 0.75rem;         /* Più piccolo */
+    font-weight: bold;          /* In grassetto */
+    background-color: transparent;
+    margin-top: 20px;           /* Spazio sopra */
+    margin-bottom: 20px;        /* Spazio sotto */
+    padding-left: 0;            /* Allinea bene a sinistra */
+}
+
+
+.breadcrumb a {
+    color: #0000009d;             /* Colore dei link */
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;             /* Colore grigio per pagina attuale */
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
