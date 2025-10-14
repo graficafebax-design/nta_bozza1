@@ -203,3 +203,38 @@ a:hover,
   background-color: transparent !important;
 }
 
+/* === Google maps === */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* === frecce per categorie accessori === */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: none;
+  color: black;
+  border: none;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
