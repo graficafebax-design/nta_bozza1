@@ -238,3 +238,47 @@ a:hover,
 .carousel-control-next {
   right: 10px;
 }
+
+
+/* Nascondi il filtro "select" senza rompere il layout */
+.col-md-6.pb-4 .d-flex {
+    display: none !important;
+}
+
+
+/* banner per pagine parquet */
+.custom-banner {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.custom-banner h1 {
+  font-size: 3.5rem; /* titolo grande */
+  margin: 0;
+  font-weight: bold;
+}
+
+.custom-banner h2 {
+  font-size: 2.0rem; /* sottotitolo più piccolo */
+  margin: 10px 0 0;
+  font-weight: normal;
+  font-style: normal; /* opzionale */
+}
+
+
+.hr-custom {
+  height: 3px;
+  background-color: #000000; /* o un colore del tuo tema */
+  border: none;
+  margin: 2rem 2; /* spazio sopra e sotto la linea */
+}
