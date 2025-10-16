@@ -69,3 +69,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler");
+    const mobileMenu = document.getElementById("mobileMenuCustom");
+    const body = document.body;
+
+    if (toggler && mobileMenu) {
+        toggler.addEventListener("click", function (e) {
+            e.preventDefault();
+            mobileMenu.classList.toggle("active");
+            body.classList.toggle("mobile-menu-open");
+        });
+    }
+});
