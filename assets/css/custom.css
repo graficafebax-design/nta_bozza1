@@ -282,3 +282,16 @@ a:hover,
   border: none;
   margin: 2rem 2; /* spazio sopra e sotto la linea */
 }
+
+
+
+
+.sotto-boen {
+    padding-left: 20px;            /* Sposta leggermente a sinistra */
+    color: #444 !important;        /* Grigio scuro */
+    font-size: 0.95rem;            /* (Opzionale) più piccolo */
+}
+
+.sotto-boen:hover {
+    color: #000 !important;        /* Al passaggio del mouse: nero */
+}
