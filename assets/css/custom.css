@@ -354,27 +354,3 @@ ul[id$="SubMenu"] {
 
 
 
-/* 🔒 Nasconde il menu laterale su mobile */
-@media (max-width: 991.98px) {
-  .menu-laterale {
-    display: none !important;
-  }
-}
-
-/* 🎨 Colore dei link principali del menu */
-.menu-laterale li > div > span > a.text-decoration-none {
-  color: #222 !important;
-  font-weight: 500;
-}
-
-/* 🎯 Hover sui link */
-.menu-laterale li > div > span > a.text-decoration-none:hover {
-  color: #c0392b !important;
-  text-decoration: none;
-}
-
-/* ⬅️ Colore delle frecce */
-.menu-laterale i.fa-chevron-right,
-.menu-laterale i.fa-chevron-circle-down {
-  color: #555 !important;
-}
