@@ -295,3 +295,86 @@ a:hover,
 .sotto-boen:hover {
     color: #000 !important;        /* Al passaggio del mouse: nero */
 }
+
+
+/* Contenitore freccia + testo */
+.list-unstyled.templatemo-accordion > li > div.d-flex {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Freccia: dimensioni e colore */
+.list-unstyled.templatemo-accordion i.fa-chevron-right {
+  font-size: 1.1rem;
+  color: #dad603;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Ruota la freccia quando il menu è aperto */
+[data-bs-toggle="collapse"][aria-expanded="true"] i.fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+/* Spazio tra freccia e testo */
+.ms-1 {
+  margin-left: 0.5rem !important;
+}
+
+/* Link principale */
+.text-decoration-none.h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Hover link */
+.text-decoration-none.h5:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Link sotto-menu */
+.list-unstyled.pl-4 a.text-decoration-none {
+  font-size: 0.95rem;
+  color: #444;
+  display: block;
+  padding: 4px 0;
+}
+
+.list-unstyled.pl-4 a.text-decoration-none:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+ul[id$="SubMenu"] {
+  padding-left: 25px; /* oppure 30px, 40px a seconda di quanto vuoi spostarlo */
+}
+
+
+
+/* 🔒 Nasconde il menu laterale su mobile */
+@media (max-width: 991.98px) {
+  .menu-laterale {
+    display: none !important;
+  }
+}
+
+/* 🎨 Colore dei link principali del menu */
+.menu-laterale li > div > span > a.text-decoration-none {
+  color: #222 !important;
+  font-weight: 500;
+}
+
+/* 🎯 Hover sui link */
+.menu-laterale li > div > span > a.text-decoration-none:hover {
+  color: #c0392b !important;
+  text-decoration: none;
+}
+
+/* ⬅️ Colore delle frecce */
+.menu-laterale i.fa-chevron-right,
+.menu-laterale i.fa-chevron-circle-down {
+  color: #555 !important;
+}
