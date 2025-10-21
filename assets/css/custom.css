@@ -306,7 +306,7 @@ a:hover,
 /* Freccia: dimensioni e colore */
 .list-unstyled.templatemo-accordion i.fa-chevron-right {
   font-size: 1.1rem;
-  color: #dad603;
+  color: #00408a;
   transition: transform 0.3s ease;
 }
 
