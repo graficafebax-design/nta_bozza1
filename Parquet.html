@@ -148,36 +148,32 @@
   </div>
 </section>
 
-<!-- ✅ Contenuto -->
-<div class="container py-5">
-  <div class="row">
+<!-- ✅ Menu laterale incluso -->
+<div id="menu-placeholder"></div>
 
-    <!-- ✅ Menu laterale (verrà caricato da menu.html) -->
-    <div class="col-lg-3">
-      <div id="menu-placeholder"></div>
-    </div>
-
-    <!-- ✅ Card dei prodotti -->
+    <!-- CONTENUTO PRINCIPALE -->
     <div class="col-lg-9">
-      <div class="row">
-
-        <!-- ✅ BOEN -->
-
- <div class="row">
-  <div class="col-md-4 mb-4">
-    <div class="card rounded-0 position-relative overflow-hidden tappabile">
-      <a href="boen_home.html"><img class="card-img rounded-0 img-fluid" src="assets/img/Parquet/boen_intro.jpg" alt="Immagine prodotto"></a>
-
-      <div class="logo-overlay d-flex align-items-center justify-content-center">
-        <img src="assets/img/brand/Logho__BOEN.png" alt="Logo Azienda" class="img-fluid" style="max-width: 120px;">
-      </div>
-
-         <div class="card-body text-center">
-        <a href="boen_home.html" class="h4 text-decoration-none"><img src="assets/img/brand/Logho__BOEN.png" alt="Logo Azienda" class="img-fluid" style="max-width: 120px;"></a>
-        <ul class="w-100 list-unstyled d-flex justify-content-between mb-0"></ul>
-      </div>
+    <div class="col-md-6">
+    <div class="d-flex">
     </div>
-  </div>
+    </div>
+    
+    <!-- Boen -->
+<div class="row">
+<div class="col-md-4 mb-4">
+<div class="card rounded-0 position-relative overflow-hidden tappabile">
+<a href="boen_home.html"><img class="card-img rounded-0 img-fluid" src="assets/img/Parquet/boen_intro.jpg" alt="Immagine prodotto"></a>
+
+<div class="logo-overlay d-flex align-items-center justify-content-center">
+<img src="assets/img/brand/Logho__BOEN.png" alt="Logo Azienda" class="img-fluid" style="max-width: 120px;">
+</div>
+
+<div class="card-body text-center">
+<a href="boen_home.html" class="h4 text-decoration-none"><img src="assets/img/brand/Logho__BOEN.png" alt="Logo Azienda" class="img-fluid" style="max-width: 120px;"></a>
+<ul class="w-100 list-unstyled d-flex justify-content-between mb-0"></ul>
+</div>
+</div>
+</div>
 
  <!-- ITALS -->
   <div class="col-md-4 mb-4">
@@ -259,10 +255,15 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
 
+        </div>
+    </div>
+        </div>
+    </div>
     <!-- End Content -->
 
     <!-- Start Brands -->
@@ -502,19 +503,12 @@
   });
 </script>
 <!-- FINE serve per aprire il menu -->
-<!-- Menu collegato esternamente-->
+
 <script>
-  fetch('menu-laterale.html')
-    .then(response => {
-      if (!response.ok) throw new Error('Errore nel caricamento del menu');
-      return response.text();
-    })
+  fetch("includes/menu-laterale.html")
+    .then(response => response.text())
     .then(data => {
-      document.getElementById('menu-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-      console.error('Errore:', error);
-      document.getElementById('menu-placeholder').innerHTML = '<p>Impossibile caricare il menu</p>';
+      document.getElementById("menu-placeholder").innerHTML = data;
     });
 </script>
 
