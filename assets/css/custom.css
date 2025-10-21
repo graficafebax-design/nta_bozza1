@@ -68,7 +68,7 @@ a:hover,
 }
 
 .carousel-caption.custom-caption h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -81,7 +81,7 @@ a:hover,
 /* Responsive su mobile */
 @media (max-width: 768px) {
     .carousel-caption.custom-caption h2 {
-        font-size: 1.6rem;
+        font-size: 3rem;
     }
 
     .carousel-caption.custom-caption p {
@@ -319,7 +319,7 @@ a:hover,
 
 /* Spazio tra freccia e testo */
 .ms-1 {
-  margin-left: 0.5rem !important;
+  margin-right: 100px !important;
 }
 
 /* Link principale */
