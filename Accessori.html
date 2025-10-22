@@ -44,194 +44,303 @@
     <!-- Close Top Nav -->
 
 
-    <!-- Header -->
+   <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand" href="index.html">
-        <img src="assets/img/nta_logo.png" alt="Logo Febax" style="height: 40px;">
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center me-2" href="index.html">
+      <img src="assets/img/nta_logo.png" alt="Logo Febax" class="logo-img">
+    </a>
+
+    <!-- MENU + LENTE solo per DESKTOP -->
+    <div class="align-self-center collapse navbar-collapse flex-fill d-none d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+      <div class="flex-fill">
+        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Parquet.html">Parquet</a></li>
+          <li class="nav-item"><a class="nav-link" href="SPC.html">SPC</a></li>
+          <li class="nav-item"><a class="nav-link" href="LAMINATO.html">Laminato</a></li>
+          <li class="nav-item"><a class="nav-link" href="Accessori.html">Accessori</a></li>
+          <li class="nav-item"><a class="nav-link" href="Outlet.html"><b>OUTLET</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar align-self-center">
+        <a class="nav-icon" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+          <i class="fa fa-fw fa-search text-dark"></i>
         </a>
-
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Parquet.html">Parquet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="SPC.html">SPC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="LAMINATO.html">Laminato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Accessori.html">Accessori</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Outlet.html"><b>OUTLET</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-    <!-- Inizio menu mobile slide-in personalizzato -->
-<div class="mobile-menu d-lg-none" id="mobileMenuCustom">
-    <ul class="nav flex-column p-4">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Parquet.html">Parquet</a></li>
-        <li class="nav-item"><a class="nav-link" href="SPC.html">SPC</a></li>
-        <li class="nav-item"><a class="nav-link" href="LAMINATO.html">Laminato</a></li>
-        <li class="nav-item"><a class="nav-link" href="Accessori.html">Accessori</a></li>
-        <li class="nav-item"><a class="nav-link" href="Outlet.html"><b>OUTLET</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-</div>
-<!-- Fine menu mobile -->
-
-    <!-- Close Header -->
-
- <!-- Modal -->
-<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="w-100 pt-1 mb-5 text-right">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
     </div>
 
-    <!-- QUI INIZIA IL FORM -->
-    <form action="" method="get" class="modal-content modal-body border-0 p-0">
-      <div class="input-group mb-2">
-        <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-        <button type="submit" class="input-group-text bg-success text-light">
-          <i class="fa fa-fw fa-search text-white"></i>
-        </button>
-      </div>
+    <!-- LENTE + HAMBURGER solo per MOBILE -->
+    <div class="d-flex align-items-center gap-2 d-lg-none">
+      <!-- Lente mobile -->
+      <button class="btn btn-link text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#templatemo_search" aria-label="Apri ricerca">
+        <i class="fa fa-search fa-lg"></i>
+      </button>
 
-      <!-- ✅ AGGIUNGI QUESTA RIGA SOTTO L'INPUT -->
-      <div id="risultatiRicerca" class="px-3"></div>
-      <!-- FINE AGGIUNTA -->
-    </form>
+      <!-- Hamburger -->
+      <button class="navbar-toggler border-0" type="button" id="customMobileMenuToggle" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
   </div>
+</nav>
+
+<!-- MENU MOBILE SLIDE-IN DA SINISTRA -->
+<div id="mobileSidebar" class="mobile-sidebar d-lg-none">
+    <button id="closeSidebar" class="close-btn">
+        <i class="fa fa-times"></i>
+    </button>
+    <ul class="nav flex-column p-4">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Parquet.html"><i class="fa fa-tree"></i> Parquet</a></li>
+        <li class="nav-item"><a class="nav-link" href="SPC.html"><i class="fa fa-border-all"></i>SPC</a></li>
+        <li class="nav-item"><a class="nav-link" href="LAMINATO.html"><i class="fa fa-layer-group"></i>Laminato</a></li>
+        <li class="nav-item"><a class="nav-link" href="Accessori.html"><i class="fa fa-tools"></i>Accessori</a></li>
+        <li class="nav-item"><a class="nav-link" href="Outlet.html"><i class="fa fa-tags"></i><b>OUTLET</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+    </ul>
+</div>
+<!-- FINE MENU MOBILE SLIDE-IN DA SINISTRA -->
+
+
+<!-- Close Header -->
+
+  <!-- Modal -->
+<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="w-100 pt-1 mb-5 text-right">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<!-- QUI INIZIA IL FORM -->
+<form action="" method="get" class="modal-content modal-body border-0 p-0">
+<div class="input-group mb-2">
+<input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+<button type="submit" class="input-group-text bg-success text-light">
+<i class="fa fa-fw fa-search text-white"></i>
+</button>
+</div>
+
+<!-- ✅ AGGIUNGI QUESTA RIGA SOTTO L'INPUT -->
+<div id="risultatiRicerca" class="px-3"></div>
+<!-- FINE AGGIUNTA -->
+</form>
+</div>
 </div>
 
 
-    <!-- Start Content -->
+
+<!-- ✅ Banner Centrale -->
+<section class="custom-banner" style="background-image: url('assets/img/accessori/banner_accessori_home.jpg')">
+  <div>
+<h1>Accessori e manutenzione</h1>
+<h2>Soluzioni semplici per pavimenti perfetti</h2>
+  </div>
+</section>
+
+    <!-- ✅ Menu laterale-->
+    <div class="col-lg-3">
+      <div id="menu-placeholder"></div>
+    </div>
+
+    <!-- ✅ Card dei prodotti -->
     <div class="container py-5">
-        <div class="row">
+    <div class="row">
 
-            <div class="col-lg-3">
-                <h1 class="h2 pb-4">Prodotti</h1>
-                <ul class="list-unstyled templatemo-accordion">
 
-                        <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Parquet
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="Boen.html">Boen</a></li>
-                            <li><a class="text-decoration-none" href="Itals.html">Itals</a></li>
-                            <li><a class="text-decoration-none" href="Bauwerk.html">Bauwerk Parkett</a></li>
-                            <li><a class="text-decoration-none" href="Haro.html">Haro</a></li>
-                            <li><a class="text-decoration-none" href="Laborlegno.html">Labor Legno</a></li>
-                            <li><a class="text-decoration-none" href="Bauwerk.html">Tarketten</a></li>
-                        </ul>
-                    </li>
+    <!-- MENU LATERALE -->
+    <div class="col-lg-3 menu-laterale">
+    <h1 class="h2 pb-4"><b>Panoramica Prodotti</b></h1>
+    <ul class="list-unstyled templatemo-accordion">
 
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            SPC
-                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="Positano.html">Positano</a></li>
-                            <li><a class="text-decoration-none" href="Sunflower.html">Sunflower</a></li>
-                            <li><a class="text-decoration-none" href="Portofino.html">Portofino</a></li>
-                            <li><a class="text-decoration-none" href="Nerano.html">Nerano</a></li>
-                            <li><a class="text-decoration-none" href="Negrar.html">Negrar</a></li>
-                            <li><a class="text-decoration-none" href="Lindera.html">Lindera</a></li>
-                            <li><a class="text-decoration-none" href="Concrete_white.html">Concrete White</a></li>
-                            <li><a class="text-decoration-none" href="Concrete_Grey.html">Concrete Grey</a></li>
-                        </ul>
-                    </li>
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Laminati
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="OakRedBrown.html">Oak Red Brown</a></li>
-                            <li><a class="text-decoration-none" href="OakWhite.html">Oak White</a></li>
-                            <li><a class="text-decoration-none" href="OakLightGrey.html">Oak Light Grey</a></li>
-                            <li><a class="text-decoration-none" href="OakSalina.html">Oak Salina</a></li>
-                            <li><a class="text-decoration-none" href="OakLightNature.html">Oak Light Nature</a></li>
-                            <li><a class="text-decoration-none" href="OakNatureYellow.html">Oak Nature Yellow</a></li>
-                        </ul>
-                    </li>
-
-                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Accessori
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Battiscopa e Giunti</a></li>
-                            <li><a class="text-decoration-none" href="#">Sotto pavimenti</a></li>
-                            <li><a class="text-decoration-none" href="#">Pulizia e manutenzione</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <!-- PARQUET -->
+    <li class="pb-2">
+    <div class="d-flex align-items-center">
+    <a href="javascript:void(0)" class="accordion-toggle" data-bs-toggle="collapse" data-bs-target="#collapseParquet" aria-expanded="false" aria-controls="collapseParquet" style="width: 20px;">
+    <i class="fa fa-chevron-right"></i>  <!-- colore freccia -->
+    </a>
+    <span class="ms-1">
+    <a href="parquet.html" class="text-decoration-none h3">Parquet</a> 
+    </span>
+    </div>
+    <ul class="collapse list-unstyled pl-4 pt-2" id="collapseParquet">
+            
+            <!-- Boen -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#boenSubMenu" aria-expanded="false" aria-controls="boenSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="boen_home.html" class="text-decoration-none">Boen</a>
+            </span>
             </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="boenSubMenu">
+            <li><a class="text-decoration-none" href="boen_181.html">Planks 181 mm</a></li>
+            <li><a class="text-decoration-none" href="boen_209.html">Planks Castle 209mm</a></li>
+            <li><a class="text-decoration-none" href="boen_prestige.html">Prestige</a></li>
+            </ul>
+            </li>
 
-            <div class="col-lg-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-inline shop-top-menu pb-3 pt-1">
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 pb-4">
-                        <div class="d-flex">
-                            <select class="form-control">
-                                <option>Filtra</option>
-                                <option>A all Z</option>
-                                <option>Z all A</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+            <!-- ITLAS -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#itlasSubMenu" aria-expanded="false" aria-controls="itlasSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="itlas_home.html" class="text-decoration-none">Itlas</a>
+            </span>
+            </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="itlasSubMenu">
+            <li><a class="text-decoration-none" href="prodotto_itals_01.html">prodotto_itals_01</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_02.html">prodotto_itals_02</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_03.html">prodotto_itals_03</a></li>
+            </ul>
+            </li>
+
+            <!-- bauwerk -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#bauwerkSubMenu" aria-expanded="false" aria-controls="bauwerkSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="bauwerk_home.html" class="text-decoration-none">Bauwerk</a>
+            </span>
+            </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="bauwerkSubMenu">
+            <li><a class="text-decoration-none" href="prodotto_itals_01.html">prodotto_bauwerk_01</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_02.html">prodotto_bauwerk_02</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_03.html">prodotto_bauwerk_03</a></li>
+            </ul>
+            </li>
+
+            <!-- HARO -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#haroSubMenu" aria-expanded="false" aria-controls="haroSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="haro_home.html" class="text-decoration-none">Haro</a>
+            </span>
+            </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="haroSubMenu">
+            <li><a class="text-decoration-none" href="prodotto_itals_01.html">prodotto_haro_01</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_02.html">prodotto_haro_02</a></li>
+            <li><a class="text-decoration-none" href="prodotto_itals_03.html">prodotto_haro_03</a></li>
+            </ul>
+            </li>
+
+            <!-- LABOR LEGNO -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#laborlegnoSubMenu" aria-expanded="false" aria-controls="laborlegnoSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="laborlegno_home.html" class="text-decoration-none">Labor Legno</a>
+            </span>
+            </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="laborlegnoSubMenu">
+            <li><a class="text-decoration-none" href="prodotto_laborlegno_01.html">prodotto_laborlegno_01</a></li>
+            <li><a class="text-decoration-none" href="prodotto_laborlegno_02.html">prodotto_laborlegno_02</a></li>
+            <li><a class="text-decoration-none" href="prodotto_laborlegno_03.html">prodotto_laborlegno_03</a></li>
+            </ul>
+            </li>
+
+            <!-- TARKETT -->
+            <li class="pt-1">
+            <div class="d-flex align-items-center">
+            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#tarkettSubMenu" aria-expanded="false" aria-controls="tarkettSubMenu" style="width: 10px;">
+            <i class="fa fa-chevron-right text-muted"></i>
+            </a>
+            <span class="ms-1">
+            <a href="tarkett_home.html" class="text-decoration-none">Tarkett</a>
+            </span>
+            </div>
+            <ul class="collapse list-unstyled pl-4 pt-2" id="tarkettSubMenu">
+            <li><a class="text-decoration-none" href="prodotto_tarkett_01.html">prodotto_tarkett_01</a></li>
+            <li><a class="text-decoration-none" href="prodotto_tarkett_02.html">prodotto_tarkett_02</a></li>
+            <li><a class="text-decoration-none" href="prodotto_tarkett_03.html">prodotto_tarkett_03</a></li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+
+        <!-- SPC -->
+        <li class="pb-2">
+        <div class="d-flex align-items-center">
+        <a href="javascript:void(0)" class="accordion-toggle" data-bs-toggle="collapse" data-bs-target="#collapseSPC" aria-expanded="false" aria-controls="collapseSPC" style="width: 20px;">
+        <i class="fa fa-chevron-right"></i>
+        </a>
+        <span class="ms-1">
+        <a href="spc.html" class="text-decoration-none h3">SPC</a>
+        </span>
+        </div>
+        <ul class="collapse list-unstyled pl-4 pt-2" id="collapseSPC">
+            <li><a class="text-decoration-none" href="Positano.html">Positano</a></li>
+            <li><a class="text-decoration-none" href="Sunflower.html">Sunflower</a></li>
+            <li><a class="text-decoration-none" href="Portofino.html">Portofino</a></li>
+            <li><a class="text-decoration-none" href="Nerano.html">Nerano</a></li>
+            <li><a class="text-decoration-none" href="Negrar.html">Negrar</a></li>
+            <li><a class="text-decoration-none" href="Lindera.html">Lindera</a></li>
+            <li><a class="text-decoration-none" href="Concrete_white.html">Concrete White</a></li>
+            <li><a class="text-decoration-none" href="Concrete_Grey.html">Concrete Grey</a></li>
+          </ul>
+        </li>
+
+        <!-- LAMINATI -->
+        <li class="pb-2">
+        <div class="d-flex align-items-center">
+        <a href="javascript:void(0)" class="accordion-toggle" data-bs-toggle="collapse" data-bs-target="#collapseLaminati" aria-expanded="false" aria-controls="collapseLaminati" style="width: 20px;">
+        <i class="fa fa-chevron-right"></i>
+        </a>
+        <span class="ms-1">
+        <a href="laminati.html" class="text-decoration-none h3">Laminati</a>
+        </span>
+        </div>
+        <ul class="collapse list-unstyled pl-4 pt-2" id="collapseLaminati">
+            <li><a class="text-decoration-none" href="OakRedBrown.html">Oak Red Brown</a></li>
+            <li><a class="text-decoration-none" href="OakWhite.html">Oak White</a></li>
+            <li><a class="text-decoration-none" href="OakLightGrey.html">Oak Light Grey</a></li>
+            <li><a class="text-decoration-none" href="OakSalina.html">Oak Salina</a></li>
+            <li><a class="text-decoration-none" href="OakLightNature.html">Oak Light Nature</a></li>
+            <li><a class="text-decoration-none" href="OakNatureYellow.html">Oak Nature Yellow</a></li>
+          </ul>
+        </li>
+
+        <!-- ACCESSORI -->
+        <li class="pb-2">
+        <div class="d-flex align-items-center">
+        <a href="javascript:void(0)" class="accordion-toggle" data-bs-toggle="collapse" data-bs-target="#collapseAccessori" aria-expanded="false" aria-controls="collapseAccessori" style="width: 20px;">
+        <i class="fa fa-chevron-right"></i>
+        </a>
+        <span class="ms-1">
+        <a href="accessori.html" class="text-decoration-none h3">Accessori</a>
+        </span>
+        </div>
+          <ul class="collapse list-unstyled pl-4 pt-2" id="collapseAccessori">
+            <li><a class="text-decoration-none" href="#">Battiscopa e Giunti</a></li>
+            <li><a class="text-decoration-none" href="#">Sotto pavimenti</a></li>
+            <li><a class="text-decoration-none" href="#">Pulizia e manutenzione</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <div class="col-lg-9">
+    <div class="col-md-6">
+    <div class="d-flex">
+    </div>
+    </div>
                     <!-- Accessori Parquet -->
                 <div class="row">
                     <div class="col-md-4">
