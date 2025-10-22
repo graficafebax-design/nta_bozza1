@@ -354,3 +354,128 @@ ul[id$="SubMenu"] {
 
 
 
+/* Logo più piccolo su mobile */
+.logo-img {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 30px;
+    }
+
+    #mobileSearchInput {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* === MENU MOBILE LATERALE === */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background-color: #ffffffce;
+    z-index: 9999;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+/* Quando attivo */
+.mobile-sidebar.active {
+    left: 0;
+}
+
+/* Pulsante chiusura */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 20px;  /* regolare dimensione */
+    height: 20px;  /* regolare dimensione */
+    font-size: 14px;  /* regolare dimensione */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+
+/* Sfondo semi-trasparente dietro il menu */
+#sidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 9998;
+    display: none;
+}
+
+#sidebarOverlay.active {
+    display: block;
+}
+
+/*vecchio menu non appaia su mobile*/
+@media (max-width: 991.98px) {
+    #templatemo_main_nav {
+        display: none !important;
+    }
+}
+
+/*cambio colore e linea divisoria*/
+.mobile-sidebar .nav-link {
+    color: #333; /* Cambia questo colore secondo il tuo tema */
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* linea divisoria */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile-sidebar .nav-link:hover {
+    color: #007b5e; /* Colore al passaggio mouse (modificabile) */
+}
+
+/* Nascondi barra di ricerca inline su mobile */
+@media (max-width: 991.98px) {
+  .d-lg-none.flex-sm-fill {
+    display: none !important;
+  }
+}
+
+.navbar-toggler {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.d-flex.align-items-center > button {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* Colore icona lente in mobile */
+.d-flex.align-items-center > button.btn-link i.fa-search {
+    color: #1d1d1d; /* esempio: blu bootstrap, cambia come vuoi */
+}
+
+/* Se vuoi cambiare colore dell’hamburger */
+.navbar-toggler {
+    color: #1d1d1d; /* colore dell'icona */
+    /* se l'icona hamburger è un svg o immagine, serve altra gestione */
+}
+
+/* Se l'icona hamburger usa lo span con background, puoi fare: */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23007bff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
