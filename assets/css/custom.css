@@ -479,3 +479,23 @@ ul[id$="SubMenu"] {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23007bff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+/*banner outlet */
+
+.outlet-banner {
+  background-image: url('../img/banner_outlet.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+
+  margin: 0px auto 50px auto; /* TOP - RIGHT - BOTTOM - LEFT */
+  padding: 60px 20px;
+
+  color: white;
+  text-align: center;
+
+  max-width: 1200px;
+  width: 100%;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* opzionale per un tocco elegante */
+}
