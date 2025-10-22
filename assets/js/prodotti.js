@@ -53,9 +53,47 @@ const prodotti = [
     nome: "Concrete Grey",
     link: "ConcreteGrey.html",
     immagine: "assets/img/SPC/concrete grey/concrete grey_03_03.jpg",
-    codice: "FRSPC0610185",
+    codice: "FRSPC0610186",
     categoria: "SPC"
   },
+
+    // LAMINATI
+     {
+    nome: "Salina Oak",
+    link: "OakSalina.html",
+    immagine: "assets/img/LAMINATO/Salina Oak/salina_oak (2).jpg",
+    codice: "FRLMSAOKAC37",
+    categoria: "LAMINATO"
+  },
+       {
+    nome: "Oak light nature",
+    link: "OakLightNature.html",
+    immagine: "assets/img/LAMINATO/Oak light nature/Oaklightnature (3).jpg",
+    codice: "FRLM52582AC48",
+    categoria: "LAMINATO"
+  },
+       {
+    nome: "Oak Nature Yellow",
+    link: "OakNatureYellow.html",
+    immagine: "assets/img/LAMINATO/Oak nature yellow/Oak nature yellow (3).jpg",
+    codice: "FRLM65818AC48",
+    categoria: "LAMINATO"
+  },
+       {
+    nome: "Oak Red Brown",
+    link: "OakSalina.html",
+    immagine: "assets/img/LAMINATO/Oak red brown/Oak red brown (3).jpg",
+    codice: "FRLM52592AC48",
+    categoria: "LAMINATO"
+  },
+       {
+    nome: "Oak White",
+    link: "OakWhite.html",
+    immagine: "assets/img/LAMINATO/Oak White/Oak White (3).jpg",
+    codice: "FRLM52587AC48",
+    categoria: "LAMINATO"
+  },
+       // Parquet
 ];
 
 
