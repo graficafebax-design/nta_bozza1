@@ -93,6 +93,13 @@ const prodotti = [
     codice: "FRLM52587AC48",
     categoria: "LAMINATO"
   },
+     {
+    nome: "Oak Light Grey",
+    link: "OakLightGrey.html",
+    immagine: "assets/img/LAMINATO/Oak Light Grey/Oak Light Grey (3).jpg",
+    codice: "FRLM52569AC48",
+    categoria: "LAMINATO"
+  },
        // Parquet
 ];
 
