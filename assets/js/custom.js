@@ -86,3 +86,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Mobile menu slide-in
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById('mobileSidebar');
+    const overlay = document.createElement('div');
+    overlay.id = 'sidebarOverlay';
+    document.body.appendChild(overlay);
+
+    const toggleButton = document.querySelector('.navbar-toggler');
+    const closeButton = document.getElementById('closeSidebar');
+
+    toggleButton.addEventListener('click', function () {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    closeButton.addEventListener('click', function () {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    overlay.addEventListener('click', function () {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+
