@@ -44,98 +44,92 @@
     <!-- Close Top Nav -->
 
 
-    <!-- Header -->
+  <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand" href="index.html">
-        <img src="assets/img/nta_logo.png" alt="Logo Febax" style="height: 40px;">
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center me-2" href="index.html">
+      <img src="assets/img/nta_logo.png" alt="Logo Febax" class="logo-img">
+    </a>
+
+    <!-- MENU + LENTE solo per DESKTOP -->
+    <div class="align-self-center collapse navbar-collapse flex-fill d-none d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+      <div class="flex-fill">
+        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Parquet.html">Parquet</a></li>
+          <li class="nav-item"><a class="nav-link" href="SPC.html">SPC</a></li>
+          <li class="nav-item"><a class="nav-link" href="LAMINATO.html">Laminato</a></li>
+          <li class="nav-item"><a class="nav-link" href="Accessori.html">Accessori</a></li>
+          <li class="nav-item"><a class="nav-link" href="Outlet.html"><b>OUTLET</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar align-self-center">
+        <a class="nav-icon" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+          <i class="fa fa-fw fa-search text-dark"></i>
         </a>
-
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-           <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Parquet.html">Parquet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="SPC.html">SPC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="LAMINATO.html">Laminato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Accessori.html">Accessori</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Outlet.html"><b>OUTLET</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-    <!-- Inizio menu mobile slide-in personalizzato -->
-<div class="mobile-menu d-lg-none" id="mobileMenuCustom">
-    <ul class="nav flex-column p-4">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Parquet.html">Parquet</a></li>
-        <li class="nav-item"><a class="nav-link" href="SPC.html">SPC</a></li>
-        <li class="nav-item"><a class="nav-link" href="LAMINATO.html">Laminato</a></li>
-        <li class="nav-item"><a class="nav-link" href="Accessori.html">Accessori</a></li>
-        <li class="nav-item"><a class="nav-link" href="Outlet.html"><b>OUTLET</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-</div>
-<!-- Fine menu mobile -->
-
-    <!-- Close Header -->
-
- <!-- Modal -->
-<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="w-100 pt-1 mb-5 text-right">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
     </div>
 
-    <!-- QUI INIZIA IL FORM -->
-    <form action="" method="get" class="modal-content modal-body border-0 p-0">
-      <div class="input-group mb-2">
-        <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-        <button type="submit" class="input-group-text bg-success text-light">
-          <i class="fa fa-fw fa-search text-white"></i>
-        </button>
-      </div>
+    <!-- LENTE + HAMBURGER solo per MOBILE -->
+    <div class="d-flex align-items-center gap-2 d-lg-none">
+      <!-- Lente mobile -->
+      <button class="btn btn-link text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#templatemo_search" aria-label="Apri ricerca">
+        <i class="fa fa-search fa-lg"></i>
+      </button>
 
-      <!-- ✅ AGGIUNGI QUESTA RIGA SOTTO L'INPUT -->
-      <div id="risultatiRicerca" class="px-3"></div>
-      <!-- FINE AGGIUNTA -->
-    </form>
+      <!-- Hamburger -->
+      <button class="navbar-toggler border-0" type="button" id="customMobileMenuToggle" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
   </div>
+</nav>
+
+<!-- MENU MOBILE SLIDE-IN DA SINISTRA -->
+<div id="mobileSidebar" class="mobile-sidebar d-lg-none">
+    <button id="closeSidebar" class="close-btn">
+        <i class="fa fa-times"></i>
+    </button>
+    <ul class="nav flex-column p-4">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Parquet.html"><i class="fa fa-tree"></i> Parquet</a></li>
+        <li class="nav-item"><a class="nav-link" href="SPC.html"><i class="fa fa-border-all"></i>SPC</a></li>
+        <li class="nav-item"><a class="nav-link" href="LAMINATO.html"><i class="fa fa-layer-group"></i>Laminato</a></li>
+        <li class="nav-item"><a class="nav-link" href="Accessori.html"><i class="fa fa-tools"></i>Accessori</a></li>
+        <li class="nav-item"><a class="nav-link" href="Outlet.html"><i class="fa fa-tags"></i><b>OUTLET</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+    </ul>
+</div>
+<!-- FINE MENU MOBILE SLIDE-IN DA SINISTRA -->
+
+
+<!-- Close Header -->
+
+  <!-- Modal -->
+<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="w-100 pt-1 mb-5 text-right">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<!-- QUI INIZIA IL FORM -->
+<form action="" method="get" class="modal-content modal-body border-0 p-0">
+<div class="input-group mb-2">
+<input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+<button type="submit" class="input-group-text bg-success text-light">
+<i class="fa fa-fw fa-search text-white"></i>
+</button>
+</div>
+
+<!-- ✅ AGGIUNGI QUESTA RIGA SOTTO L'INPUT -->
+<div id="risultatiRicerca" class="px-3"></div>
+<!-- FINE AGGIUNTA -->
+</form>
+</div>
 </div>
 
 
