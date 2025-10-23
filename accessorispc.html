@@ -594,29 +594,6 @@
     <script src="assets/js/prodotti.js"></script>
 
     <!-- End Script -->
-<!-- Questo serve per aprire il menu -->
-<script>
-  // Prendo il bottone hamburger (quello bootstrap)
-  const btnMenu = document.querySelector('.navbar-toggler');
-
-  // Prendo il menu mobile personalizzato
-  const mobileMenu = document.getElementById('mobileMenuCustom');
-
-  // Quando clicco l'hamburger...
-  btnMenu.addEventListener('click', function() {
-    // ...toggle (aggiunge/rimuove) la classe 'active' per farlo scorrere
-    mobileMenu.classList.toggle('active');
-  });
-
-  // Facoltativo: chiudi il menu cliccando su un link (per miglior UX)
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-    });
-  });
-</script>
-<!-- FINE serve per aprire il menu -->
-
 
 </body>
 
