@@ -500,25 +500,26 @@ ul[id$="SubMenu"] {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* opzionale per un tocco elegante */
 }
 
-@media (max-width: 767px) {
-  .row > .col-md-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
+
+
+
+/*PER I prodotti su 2 colonne */
+
+.custom-two-cols-sm .col-6.col-md-4 {
+  padding-left: 0.25rem;  /* o 0 se vuoi meno spazio */
+  padding-right: 0.25rem;
+  box-sizing: border-box;
+  flex: 0 0 50%;          /* forza la larghezza al 50% */
+  max-width: 50%;
+}
+@media (min-width: 768px) {
+  .custom-two-cols-sm .col-6.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
   }
 }
 
-.product-wap {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
-.card-body {
-  flex-grow: 1; /* fa in modo che la parte testuale riempia lo spazio disponibile */
-}
-
-.row > .col-md-4, 
-.row > .col-6.col-md-4 {
-  display: flex;
-  flex-direction: column;
+.row-parquet .col-6.col-md-4 {
+  margin-bottom: clamp(1rem, 2vw, 2rem); /* aumenta o diminuisci a piacere */
 }
